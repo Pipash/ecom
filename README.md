@@ -5,5 +5,5 @@ Create a database for example <br>
 Create .env file, copy and paste content of .env.example to .env and configure env file with your database configuration<br>
 Then do `php artisan migrate`<br>
 Run `php artisan serve` and got to link http://127.0.0.1:8000/ <br>
-Call `http://127.0.0.1:8000/` api url to crete tasks with required data<br>
-Call `http://127.0.0.1:8000/category-tree` api url to update tasks with required data<br>
+Call `http://127.0.0.1:8000/` url<br>
+Call `http://127.0.0.1:8000/category-tree`  url <br>
