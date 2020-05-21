@@ -22,10 +22,10 @@ class CategoryController extends Controller
 
     public function treeView()
     {
-        $categories = Category::with('parents','childrenRecursive','children.items')->doesnthave('parents')->get();
+        $categories = Category::with('parents','childrenRecursive')->doesnthave('parents')->get();
         return view('category_tree_items', [
             'categories' => $categories,
         ]);
-        //dd($categories[0]);
+        dd($categories[0]);
     }
 }

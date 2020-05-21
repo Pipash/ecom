@@ -23,7 +23,7 @@
                 <li><i class="fas fa-angle-right rotate"></i>
                     <span><i class=""></i>{{$category->Name}}</span>
                         <ul class="nested">
-                            @foreach($category->children as $children)
+                            @foreach($category->childrenRecursive as $children)
                                 <li><i class=""></i>{{$children->Name}}</li>
                                 <ul class="nested">
                                     @foreach($children->items as $item)
