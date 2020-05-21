@@ -62,47 +62,4 @@ class Category extends Model
     {
         return $this->children()->with('childrenRecursive');
     }
-
-    /**
-     * Recursive parent
-     *
-     * @return mixed
-     */
-    /*public function parentRecursive()
-    {
-        return $this->parent()->with('parentRecursive');
-    }*/
-
-    /**
-     * Get mapped Products
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    /*public function products()
-    {
-        return $this->hasMany('App\Model\Product');
-    }*/
-
-    /*public function childProducts()
-    {
-
-        return $this->hasManyThrough(
-            'App\Model\Product',
-            'App\Model\Category',
-            'parent_id',
-            'category_id'
-        );
-    }*/
-
-    /**
-     * Get the product details through product
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
-     */
-    /*public function productDetails()
-    {
-        return $this->hasManyThrough(
-            'App\Model\ProductDetails', 'App\Model\Product'
-        );
-    }*/
 }
