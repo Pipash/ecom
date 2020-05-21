@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('categories', 'CategoryController@index')->name('index');
+Route::get('/', 'CategoryController@index')->name('index');
 Route::get('category-tree', 'CategoryController@treeView')->name('treeView');
