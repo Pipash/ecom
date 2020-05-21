@@ -24,12 +24,14 @@
                     <span><i class=""></i>{{$category->Name}}</span>
                         <ul class="nested">
                             @foreach($category->childrenRecursive as $children)
-                                <li><i class=""></i>{{$children->Name}}</li>
-                                <ul class="nested">
-                                    @foreach($children->items as $item)
-                                        <li><i class=""></i>{{$children->Name1}}</li>
-                                    @endforeach
-                                </ul>
+                                <li><i class="fas fa-angle-right rotate"></i>
+                                    <span><i class=""></i>{{$children->Name}}</span>
+                                    <ul class="nested">
+                                        @foreach($children->items as $item)
+                                            <li><i class=""></i>{{$children->Name1}}</li>
+                                        @endforeach
+                                    </ul>
+                                </li>
                             @endforeach
                         </ul>
                 </li>
